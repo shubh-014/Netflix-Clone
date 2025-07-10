@@ -1,0 +1,402 @@
+* {
+    padding: 0;
+    margin: 0;
+font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI",Roboto, Ubuntu, sans-serif;
+ 
+
+}
+body{
+     background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+.main {
+    /* background-image:url(Bg.jpg) */
+    background-image: url(Bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    width: 100vw;
+}
+
+.box1 {
+
+    height: 85vh;
+    background: radial-gradient(transparent,rgba(0, 0, 0, 0.662));
+    background-color: rgb(0, 0, 0, 0.502);
+    
+}
+
+.nav {
+    position: relative;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10vw;
+    padding-top: 10px;
+    z-index: 10;
+
+
+}
+
+.logo {
+    position: relative;
+    color: red;
+    margin: 12px 0px;
+    z-index: 10;
+}
+
+
+div.logo svg {
+    width: min(20vw, 150px);
+}
+
+.buttons {
+    display: flex;
+    gap: 10px
+}
+button.second:hover{
+    background-color: rgb(207, 3, 3);
+    cursor: pointer;
+}
+@media (min-width:600px) {
+
+.first,
+.second {
+    
+    border: 1.2px solid;
+    border-color: rgba(255, 255, 255, 0.589);
+    border-radius: 3px;
+    padding: 7.5px 15px;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 1000;
+}
+.first {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.second {
+    background-color: rgb(229, 9, 20);
+    border-color:transparent
+    
+}
+}
+
+.buttons2{
+    display: flex;
+    justify-content: center;
+    
+    padding: 7.5px 15px;
+    
+}
+
+    
+
+input{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0px;
+    padding-right: 230px;
+    padding-left: 10px;
+    margin: 20px;
+    margin-right: 0;
+    border: 1px solid;
+    border-color: rgba(255, 255, 255, 0.34);
+    border-radius: 5px;
+    color: white;
+    
+}
+input::placeholder{
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.516);
+}
+.fourth{
+    background-color: rgb(229, 9, 20);
+    padding: 10px 10px;
+    margin: 20px 0px;
+    margin-left: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items:center ;
+    gap:10px
+}
+.fourth:hover{
+    background-color: rgb(207, 3, 3);
+     cursor: pointer;
+}
+
+
+span {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.Title {
+    padding-top: 15vh;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 1000;
+    font-size: max(4vw, 30px);
+    text-align: center;
+    box-sizing: border-box;
+    max-width: max(50vw, 350px);
+    margin: 0 auto
+}
+
+.Subheading {
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Text {
+    margin-top: 30px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+
+@media (max-width:660px) {
+.Title{
+    margin-top: 12vh;
+    padding-top: 0;
+}
+
+
+
+    .first,
+.second {
+    
+    border: 1.2px solid;
+    border-color: rgba(255, 255, 255, 0.589);
+    border-radius: 3px;
+    padding: 7.5px 5px;
+    color: white;
+    
+}
+.shrink {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
+    width: 40px;
+}
+button span {
+    display: none;
+}
+
+.second {
+    background-color: rgb(229, 9, 20);
+    border-color:none;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 1000;
+}
+
+.buttons2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fourth{
+    max-width: 50vw;
+    padding: px 5px;
+    margin: 5px 0px;
+}
+}
+ 
+
+.seperator{
+    width: 100vw;
+    height: 4px;
+    background-color: #222222;
+    position: relative;
+    z-index: 100;
+}
+
+/* /////////////////////// */
+
+.section1{
+    width: 70vw;
+  
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.text1{
+    display: flex;
+    flex-direction: column;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    font-weight: 1000;
+    font-size: max(2.5vw, 30px);
+    
+}
+.text1 :nth-last-child(1){
+font-weight: 400;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.secImg{
+    position: relative;
+}
+.secImg Img{
+     width: 555px;
+    position: relative;
+    z-index: -1;
+    
+}
+.secImg video{
+    position: absolute;
+    top: 85px;
+    right: 77px;
+    left: auto;
+    width: 405px;
+}
+
+
+
+@media (max-width:1300px) {
+    
+
+
+    .section1{
+        flex-wrap: wrap;
+        /* margin-top: 60px; */
+    }
+    .secImg{
+        transform: scale(0.6);
+    }
+    
+}
+
+/* /////////////////////////////////// */
+
+
+.faq{
+    color: white;
+    padding: 20px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    
+}
+.faqbox{
+    height: 80px;
+    margin: 10px 120px 0px 120px;
+    background-color: #2D2D2D;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+.faqbox:hover{
+    background-color: #414141;
+}
+.faqbox span{
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+.faqbox svg{
+    filter:invert(1);
+}
+
+@media (max-width:900px) {
+    .head{
+        align-content: center;
+    }
+    .faqbox{
+    margin: 15px 12px 0px 12px;
+    }
+
+}
+
+/* /////////////////////////////////// */
+
+
+footer{
+    margin-top: 60px;
+}
+.footer{
+    margin: 10px 120px 20px 120px;
+    padding: ;
+}
+.footer input{
+    padding-right:400px ;
+    
+}
+.firstfooter{
+    margin: 0 120px;
+}
+
+.end{
+    margin: 10px 120px 0px 120px;
+    color: #B3B3B3;
+    font-style: normal;
+}
+.terms{
+    margin: 10px 120px 0px 120px;
+    color: #B3B3B3;
+    padding-top: 30px;
+    font-size: smaller;
+}
+
+
+
+
+@media (max-width:1300px) {
+
+
+
+    .section1{
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+    
+}
+
+@media (max-width:900px) {
+.firstfooter{
+ border: 1.2px solid;
+    border-color: rgba(255, 255, 255, 0.589);
+    border-radius: 3px;
+    padding: 7.5px 20px;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 2vw;
+    margin-top: 40px;
+}
+.end{
+    margin: 2vw;
+
+}
+.terms{
+    margin:2vw
+}
+
+}
